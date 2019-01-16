@@ -1,0 +1,12 @@
+header {
+  position: fixed;
+  width: 100%;
+  padding: 1.875em 4%;
+  box-sizing: border-box;
+  .brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+}

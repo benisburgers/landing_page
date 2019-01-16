@@ -1,2 +1,8 @@
 @import "reset";
+@import "variables";
 @import "header";
+@import "content";
+//universal style rules
+img {
+  display: block;
+}

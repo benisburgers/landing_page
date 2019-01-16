@@ -55,14 +55,31 @@ table {
 header {
   position: fixed;
   width: 100%;
-  padding: 1.875em 4%;
   box-sizing: border-box;
+  padding: 1.875em 2.0625em;
 }
 header .brand {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto;
+}
+header .brand .brand-left {
+  display: block;
+  width: 22.67%;
+}
+header .brand .brand-left img {
+  width: 100%;
+}
+header .brand .brand-right {
+  width: 33.39%;
+}
+header .brand .brand-right img {
+  width: 100%;
+}
+
+img {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

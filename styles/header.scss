@@ -1,8 +1,33 @@
-header {
+//Universal rules
+.mobile-heading {
+	color: rgba(0,0,0,0.38);
+	font-family: Helvetica;
+	font-size: 3rem;
+	font-weight: 300;
+}
+
+.mobile-padding {
+  padding-left: 2.0625rem;
+  padding-right: 2.0625rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 1.33%;
+}
+
+
+ header {
+  &.invisible {
+    position: relative;
+    visibility: hidden;
+  }
   position: fixed;
   width: 100%;
   box-sizing: border-box;
-  padding: 1.875em 2.0625em;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
   .brand {
     display: flex;
     justify-content: space-between;
@@ -19,6 +44,52 @@ header {
       width: 33.39%;
       img {
         width: 100%;
+      }
+    }
+  }
+}
+
+.content {
+  .landing-page {
+    .garage {
+      width: 100%;
+      margin-bottom: 10rem;
+    }
+    h1 {
+      margin-bottom: 10rem;
+      grid-column: col-start 2 / span 10;
+    }
+    .date-and-time,
+    .location {
+      margin-top: 3rem;
+      img {
+        grid-column: col-start 2 / span 1;
+        width: 100%;
+      }
+      .text {
+        grid-column: col-start 4 / span 8;
+        span {
+          display: block;
+          color: rgba(0,0,0,0.38);
+          font-family: Helvetica;
+          font-size: 1.625rem;
+          font-weight: 300;
+        }
+      }
+    }
+    .button-container {
+      margin-top: 10rem;
+      button {
+        grid-column: col-start 2 / span 10;
+        background-color: #009ADA;
+      	color: #FFFFFF;
+      	font-family: Helvetica;
+        font-size: 2rem;
+      	letter-spacing: 0.29px;
+      	text-align: center;
+        border-radius: 1em;
+        line-height: 5rem;
+        margin-top: 2rem;
       }
     }
   }

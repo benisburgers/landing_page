@@ -9,7 +9,18 @@
   </head>
   <body>
     <div class="screen">
-      <header>
+      <header class="mobile-padding">
+        <div class="brand">
+          <div class="brand-left">
+            <img src="assets/brand-left.png" alt="Company Brand">
+          </div>
+          <div class="brand-right">
+            <img src="assets/brand-right.jpg" alt="Company Logos">
+          </div>
+        </div>
+      </header>
+      <!--The point of header class="invisible" is to move landing page bellow header-->
+      <header class="invisible">
         <div class="brand">
           <div class="brand-left">
             <img src="assets/brand-left.png" alt="Company Brand">
@@ -21,7 +32,32 @@
       </header>
       <div class="content">
         <section class="landing-page">
-          <img src="assets/garage.jpg" alt="Location">
+          <img src="assets/garage.jpg" alt="Location" class="garage"/>
+          <div class="body mobile-padding">
+            <div class="heading grid">
+              <h1 class="mobile-heading">Anmeldung zum Neujahrsapéro</h1>
+            </div>
+            <div class="date-and-time grid">
+              <img src="assets/calendar-icon.svg" alt="calendar icon" class="icon">
+              <div class="text">
+                <span>Donnerstag, 11. Januar</span>
+                <span>Ab 18.30 bis 22.00 Uhr</span>
+              </div>
+            </div>
+            <div class="location grid">
+              <img src="assets/map-pin.svg" alt="map pin icon">
+              <div class="text">
+                <span>Binelli Group Adliswil</span>
+                <span>Zürichstrasse 102</span>
+                <span>8134</span>
+                <span>Adliswil</span>
+              </div>
+            </div>
+            <div class="button-container grid">
+              <button type="button" name="button" class="">Ich nehme Teil</button>
+              <button type="button" name="button" class="">Ich nehme Teil</button>
+            </div>
+          </div>
         </section>
         <section class="signup-page">
         </section>

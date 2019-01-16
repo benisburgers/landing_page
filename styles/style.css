@@ -52,11 +52,34 @@ table {
   border-spacing: 0;
 }
 
+.mobile-heading {
+  color: rgba(0, 0, 0, 0.38);
+  font-family: Helvetica;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.mobile-padding {
+  padding-left: 2.0625rem;
+  padding-right: 2.0625rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 1.33%;
+}
+
 header {
   position: fixed;
   width: 100%;
   box-sizing: border-box;
-  padding: 1.875em 2.0625em;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+}
+header.invisible {
+  position: relative;
+  visibility: hidden;
 }
 header .brand {
   display: flex;
@@ -76,6 +99,51 @@ header .brand .brand-right {
 }
 header .brand .brand-right img {
   width: 100%;
+}
+
+.content .landing-page .garage {
+  width: 100%;
+  margin-bottom: 10rem;
+}
+.content .landing-page h1 {
+  margin-bottom: 10rem;
+  grid-column: col-start 2/span 10;
+}
+.content .landing-page .date-and-time,
+.content .landing-page .location {
+  margin-top: 3rem;
+}
+.content .landing-page .date-and-time img,
+.content .landing-page .location img {
+  grid-column: col-start 2/span 1;
+  width: 100%;
+}
+.content .landing-page .date-and-time .text,
+.content .landing-page .location .text {
+  grid-column: col-start 4/span 8;
+}
+.content .landing-page .date-and-time .text span,
+.content .landing-page .location .text span {
+  display: block;
+  color: rgba(0, 0, 0, 0.38);
+  font-family: Helvetica;
+  font-size: 1.625rem;
+  font-weight: 300;
+}
+.content .landing-page .button-container {
+  margin-top: 10rem;
+}
+.content .landing-page .button-container button {
+  grid-column: col-start 2/span 10;
+  background-color: #009ADA;
+  color: #FFFFFF;
+  font-family: Helvetica;
+  font-size: 2rem;
+  letter-spacing: 0.29px;
+  text-align: center;
+  border-radius: 1em;
+  line-height: 5rem;
+  margin-top: 2rem;
 }
 
 img {

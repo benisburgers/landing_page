@@ -17,6 +17,18 @@
   grid-gap: 1.33%;
 }
 
+button {
+  background-color: #009ADA;
+  color: #FFFFFF;
+  font-family: Helvetica;
+  font-size: 2rem;
+  letter-spacing: 0.29px;
+  text-align: center;
+  border-radius: 3rem;
+  line-height: 5rem;
+  width: 100%;
+}
+
 
  header {
   &.invisible {
@@ -28,6 +40,7 @@
   box-sizing: border-box;
   padding-top: 1.875rem;
   padding-bottom: 1.875rem;
+  background-color: white;
   .brand {
     display: flex;
     justify-content: space-between;
@@ -50,6 +63,7 @@
 }
 
 .content {
+
   .landing-page {
     .garage {
       width: 100%;
@@ -77,6 +91,7 @@
         }
       }
     }
+
     .button-container {
       margin-top: 10rem;
       button {
@@ -87,9 +102,73 @@
         font-size: 2rem;
       	letter-spacing: 0.29px;
       	text-align: center;
-        border-radius: 1em;
+        border-radius: 3rem;
         line-height: 5rem;
         margin-top: 2rem;
+      }
+    }
+  }
+
+  .signup-page {
+    margin-top: 5rem;
+    .body {
+      grid-column: col-start 2 / span 10;
+    }
+    .form-container {
+      margin-top: 3rem;
+      input {
+        margin-top: 1rem;
+        display: block;
+        font-family: Helvetica;
+        font-size: 2.3rem;
+        font-weight: 300;
+        color: black;
+        &::placeholder {
+          color: rgba(0,0,0,0.38);
+          font-style: normal;
+        }
+        &.faulty {
+          color: red;
+        }
+        &.missing {
+          color: red;
+          font-style: italic;
+        }
+      }
+    }
+    .entourage {
+      margin: 5rem 0;
+      .form-container {
+        display: none;
+      }
+      .hidden_checkbox {
+        display: none;
+        &:checked {
+          ~ .visible_checkbox {
+            img {
+              background-color: #009ADA;
+            }
+          }
+          ~ .form-container {
+            display: block;
+          }
+        }
+      }
+      img {
+        background-color: white;
+        width: 2.3rem;
+        padding: .2rem;
+        box-sizing: border-box;
+        border: 0.125rem solid #009ADA;
+        border-radius: 10%;
+        display: inline-block;
+      }
+      .text {
+        font-family: Helvetica;
+        font-size: 1rem;
+        font-weight: 300;
+        color: #009ADA;
+        margin-left: 2rem;
       }
     }
   }

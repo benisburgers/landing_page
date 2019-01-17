@@ -54,12 +54,34 @@
               </div>
             </div>
             <div class="button-container grid">
-              <button type="button" name="button" class="">Ich nehme Teil</button>
-              <button type="button" name="button" class="">Ich nehme Teil</button>
+              <button type="button" name="button">Ich nehme Teil</button>
+              <button type="button" name="button">Ich nehme Teil</button>
             </div>
           </div>
         </section>
-        <section class="signup-page">
+        <section class="signup-page grid mobile-padding">
+          <div class="body">
+            <h1 class="mobile-heading">Ich nehme Teil</h1>
+            <div class="form-container">
+              <input type="text" name="name" placeholder="Vollständiger Name*" id="vname">
+              <input type="text" name="email" placeholder="Email*" id="email">
+              <input type="text" name="strasse" placeholder="Strasse" id="strasse" class="missing">
+              <input type="text" name="plz" placeholder="PLZ" id="plz" class="faulty">
+              <input type="text" name="ort" placeholder="Ort" id="ort">
+            </div>
+            <div class="entourage">
+              <input type="checkbox" name="entourage" id="entourage" class="hidden_checkbox">
+              <label for="entourage" class="visible_checkbox">
+                <img src="assets/checkbox_check.svg" alt="checkmark" id="checkmark">
+              </label>
+              <label for="entourage" class="text">Ich komme in Begleitung</label>
+              <div class="form-container">
+                <input type="text" name="name" placeholder="Vollständiger Name*" id="vname">
+                <input type="text" name="email" placeholder="Email*" id="email">
+              </div>
+            </div>
+            <button type="button" name="abschicken">Abschicken</button>
+          </div>
         </section>
         <section class="confirmation-page">
           <section class="confirmation-positive">

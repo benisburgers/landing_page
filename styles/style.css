@@ -70,12 +70,25 @@ table {
   grid-gap: 1.33%;
 }
 
+button {
+  background-color: #009ADA;
+  color: #FFFFFF;
+  font-family: Helvetica;
+  font-size: 2rem;
+  letter-spacing: 0.29px;
+  text-align: center;
+  border-radius: 3rem;
+  line-height: 5rem;
+  width: 100%;
+}
+
 header {
   position: fixed;
   width: 100%;
   box-sizing: border-box;
   padding-top: 1.875rem;
   padding-bottom: 1.875rem;
+  background-color: white;
 }
 header.invisible {
   position: relative;
@@ -141,9 +154,68 @@ header .brand .brand-right img {
   font-size: 2rem;
   letter-spacing: 0.29px;
   text-align: center;
-  border-radius: 1em;
+  border-radius: 3rem;
   line-height: 5rem;
   margin-top: 2rem;
+}
+.content .signup-page {
+  margin-top: 5rem;
+}
+.content .signup-page .body {
+  grid-column: col-start 2/span 10;
+}
+.content .signup-page .form-container {
+  margin-top: 3rem;
+}
+.content .signup-page .form-container input {
+  margin-top: 1rem;
+  display: block;
+  font-family: Helvetica;
+  font-size: 2.3rem;
+  font-weight: 300;
+  color: black;
+}
+.content .signup-page .form-container input::placeholder {
+  color: rgba(0, 0, 0, 0.38);
+  font-style: normal;
+}
+.content .signup-page .form-container input.faulty {
+  color: red;
+}
+.content .signup-page .form-container input.missing {
+  color: red;
+  font-style: italic;
+}
+.content .signup-page .entourage {
+  margin: 5rem 0;
+}
+.content .signup-page .entourage .form-container {
+  display: none;
+}
+.content .signup-page .entourage .hidden_checkbox {
+  display: none;
+}
+.content .signup-page .entourage .hidden_checkbox:checked ~ .visible_checkbox img {
+  background-color: #009ADA;
+}
+.content .signup-page .entourage .hidden_checkbox:checked ~ .form-container {
+  display: block;
+}
+.content .signup-page .entourage img {
+  background-color: white;
+  width: 2.3rem;
+  padding: 0.2rem;
+  box-sizing: border-box;
+  border: 0.125rem solid #009ADA;
+  border-radius: 10%;
+  display: inline-block;
+}
+.content .signup-page .entourage .text {
+  font-family: Helvetica;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #009ADA;
+  margin-left: 2rem;
 }
 
 img {
